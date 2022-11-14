@@ -4,6 +4,8 @@
  */
 package com.curso.iniciacion;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author igallego
@@ -93,17 +95,22 @@ public class RelacionCero {
         return change;
     }
 
-    public static void rice(float number) {
-        int box5 = (int) number / 5;
-        System.out.println("Paquetes de 5kg: " + box5);
+    public static int[] rice(float number) {
+        int [] paquetes = new int[3];
+        paquetes[0] = (int) number / 5;
+        System.out.println("Paquetes de 5kg: " + paquetes[0]);
         int rest = (int) number % 5;
         if (rest != 0) {
-            System.out.println("Paquetes de 3kg: " + rest / 3);
+            paquetes[1]=rest/3;
+            System.out.println("Paquetes de 3kg: " + paquetes[1]);
         }
         rest %= 3;
         if (rest != 0) {
-            System.out.println("Paquetes de 1kg: " + rest);
+            paquetes[2]=rest;
+            System.out.println("Paquetes de 1kg: " + paquetes[2]);
         }
+        
+        return paquetes;
     }
 
 }

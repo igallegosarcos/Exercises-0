@@ -26,8 +26,8 @@ public class Iniciacion {
         //System.out.println(RelacionCero.isArmstrong(12));
         //Ejercicio 6
         //System.out.println(RelacionCero.reverse("Chocolate caliente"));
-        // Ejercicio 7
-        //RelacionCero.rice((float) 23.5);
+        //Ejercicio 7
+        RelacionCero.rice((float) 24);
         
         
         
